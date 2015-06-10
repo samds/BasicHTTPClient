@@ -19,11 +19,11 @@ int main(int argc, const char * argv[]) {
 
     if (argc>1) {
         if(argv[1]==posix_arg) {
-            std::cout << "HTML Client (POSIX APIs)" << std::endl;
+            std::cout << "HTTP Client (POSIX APIs)" << std::endl;
             POSIX_init_http_client();
         }
         else if (argv[1]==asio_arg) {
-            std::cout << "HTML Client (ASIO APIs)" << std::endl;
+            std::cout << "HTTP Client (ASIO APIs)" << std::endl;
             ASIO_init_http_client();
         }
         else {
